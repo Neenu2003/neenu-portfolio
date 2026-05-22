@@ -1,23 +1,34 @@
 import "./App.css"
 
 function App() {
+   const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <div className="portfolio">
 
-      {/* Navbar */}
       <nav className="navbar">
-        <h2 className="logo">Neenu</h2>
 
-        <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <h2 className="logo">Neenu</h2>
 
+  <div
+    className="menu-toggle"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    ☰
+  </div>
+
+  <ul className={menuOpen ? "nav-links active" : "nav-links"}>
+
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+
+  </ul>
+
+</nav>
       {/* Hero Section */}
       <section id="home" className="hero">
 
