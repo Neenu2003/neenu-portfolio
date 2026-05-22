@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1e1b2e;
+  color: white;
+}
+
+.portfolio {
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #241b35;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #d8b4fe;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d8b4fe;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.hero-text h2 {
+  color: #d8b4fe;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #e9d5ff;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-buttons button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #c084fc;
+  color: white;
+  transition: 0.3s;
+}
+
+.hero-buttons button:hover {
+  background-color: #a855f7;
+}
+
+.resume-btn {
+  background-color: #ede9fe;
+  color: #4c1d95;
+}
+
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #c084fc;
+}
+
+/* About */
+
+.about {
+  padding: 100px 60px;
+}
+
+.about h2 {
+  color: #d8b4fe;
+  margin-bottom: 30px;
+}
+
+.about p {
+  line-height: 2;
+  font-size: 18px;
+  color: #e9d5ff;
+}
+
+/* Skills */
+
+.skills {
+  padding: 100px 60px;
+}
+
+.skills h2 {
+  color: #d8b4fe;
+  margin-bottom: 40px;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #312e4b;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #c084fc;
+  color: white;
+}
+
+/* Experience */
+
+.experience {
+  padding: 100px 60px;
+}
+
+.experience h2 {
+  color: #d8b4fe;
+  margin-bottom: 40px;
+}
+
+.experience-card {
+  background-color: #312e4b;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.experience-card h3 {
+  margin-bottom: 10px;
+}
+
+.experience-card h4 {
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+
+.experience-card ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 10px;
+  color: #f3e8ff;
+}
+
+/* Projects */
+
+.projects {
+  padding: 100px 60px;
+}
+
+.projects h2 {
+  color: #d8b4fe;
+  margin-bottom: 40px;
+}
+
+.project-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #312e4b;
+  padding: 30px;
+  width: 350px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card h3 {
+  margin-bottom: 20px;
+}
+
+.project-card p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #f3e8ff;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tech-stack span {
+  background-color: #4c3f72;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.project-card button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c084fc;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.project-card button:hover {
+  background-color: #a855f7;
+}
+
+/* Contact */
+
+.contact {
+  padding: 100px 60px;
+}
+
+.contact h2 {
+  color: #d8b4fe;
+  margin-bottom: 30px;
+}
+
+.contact-box {
+  background-color: #312e4b;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.contact-box p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #f3e8ff;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #241b35;
+  color: #d8b4fe;
+}
